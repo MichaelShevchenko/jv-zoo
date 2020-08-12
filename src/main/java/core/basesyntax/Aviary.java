@@ -24,7 +24,7 @@ public class Aviary<T> {
     public void feedAnimals() {
         System.out.println(String.format(
                 "The food was delivered to the aviary for %s animals. Time to eat", aviaryType));
-        for (T animal : this.specificAviary) {
+        for (T animal : specificAviary) {
             System.out.println(((Animal) animal).eat());
         }
         System.out.println("All animals in this aviary have been fed \n");
